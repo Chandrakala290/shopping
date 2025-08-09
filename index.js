@@ -364,7 +364,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     // };
     const payload = {
-      score: [deviceInfo.riskScore ]
+      score: [25 ]
     }
     console.log(payload);
     const apiUrl = "https://frm-demo.appsteer.io/services/rule/validate?formUUID=cb605830-bc7b-4b44-a1d8-baf6050fb4e2&recordId=3fbac30c-c347-4b99-8bd9-908501c7f4c8&currentStatusId=0"
@@ -1057,5 +1057,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 });
+
 
 
