@@ -11,9 +11,7 @@ let customerId = null;
 // let captchaId = 0;
 window.addEventListener('DOMContentLoaded', () => {
   // console.log("Check", "1");
-  const hash = window.location.hash.substring(1); // remove the "#"
-const params = new URLSearchParams(hash);
-  const token =  params.get("token");
+ const token = new URLSearchParams(window.location.search).get("token");
   if (token) {
     localStorage.setItem("tokenId", token);
     console.log("Token stored:", token);
@@ -1059,4 +1057,5 @@ const params = new URLSearchParams(hash);
 
 
 });
+
 
